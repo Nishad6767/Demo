@@ -7,27 +7,24 @@
   <title>Document</title>
 </head>
 <body>
-  
+
   <script>
-    const str = "SELF STACK";
+    function maximum(){
 
-    let revStr = "";
+    const array = [10,55,22,60,99];
 
-    function reversestring(){
-
-      for(let i=str.length-1;i>=0;i--){
-
-        revStr += str[i];
+    let max = array[0];
+     for(let i=0;i<array.length;i++){
+      if(array[i]>max){
+        max = array[i]
       }
-      document.write(revStr);
+     }
 
+     document.write(max)
     }
-    reversestring();
-   
+
+    maximum();
   </script>
-  
+
 </body>
-</html>
-
-
 
