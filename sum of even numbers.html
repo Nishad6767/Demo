@@ -12,19 +12,18 @@
 
 
     <script>
+        let limit = n;
+        let sum = 0;
 
-        function sortArray(){
-        
-    
-        const array = [99,88,55,66,77,11];
-
-         const arrayAscending = array.sort(function(a,b) {return a - b})
-
-         document.write(arrayAscending);
+        function sumEven(){
+            for(let i=0; i<=limit; i++){
+                if(i%2==0){
+                    sum+=i;
+                }
+            }
+            document.write(sum);
         }
-
-        sortArray();
-
+        sumEven();
     </script>
 </body>
 </html>
